@@ -7,13 +7,34 @@
     position: absolute;
     text-transform: uppercase;
     padding:10px;
-    font-weight: 600;
+    font-weight: 500;
     &-jaune {
         width:150px;
         margin-top:20px;
     }
+    &-prices {
+        padding:10px;
+        border: 1px solid $lightgray;
+    }
+    &prices:hover {
+        border: 1px solid $jaune;
+    }
+    &-black {
+        width:250px;
+        top:75%;
+    }
+    &-yellow-prices {
+        width:80px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+    &-yellow-hotel {
+        width:100px;
+        padding:10px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
-.btn-prices {
-    padding:10px;
-}

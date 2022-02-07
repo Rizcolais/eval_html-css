@@ -7,38 +7,84 @@ h1,
 .btn-jaune a,
 .city p,
 .city h4,
-.btn-black
+.btn-black a,
+footer h5,
+.email-address i,
+input,
+.txt-tags:hover a,
+.btn-prices:hover a,
+.chemin a,
+.chemin i
 {
     color: $white;
 }
 
 .comment:nth-of-type(1) i:not(:last-child),
-.comment:nth-of-type(2) i:not(:nth-last-child(-n+2)) {
+.comment:nth-of-type(2) i:not(:nth-last-child(-n+2)),
+.swiper i:nth-of-type(1),
+span,
+.copyright i,
+h5 a:hover,
+.link-right a:hover,
+.issue-block:hover a,
+.main-nav a:hover,
+.comment:hover h5,
+.foot-liens a:hover,
+.title-hotel i:not(:last-child) {
     color: $jaune;
+}
+
+.swiper i:not(:nth-of-type(1)) {
+    color: $opacityjaune;
+}
+
+.date-articles,
+h5 a,
+.txt-tags a,
+.btn-yellow-prices a,
+.btn-prices a,
+.btn-yellow-hotel a {
+    color: $lightblack;
+}
+
+footer p,
+footer a {
+    color:$darkgray;
 }
 
 /*background color*/
 
-.btn-jaune
+.btn-jaune,
+.email-address i,
+.txt-tags:hover,
+.btn-yellow-prices,
+.btn-prices:hover,
+.btn-yellow-hotel
  {
     background-color: $jaune;
 }
 
 .packages,
-.comment {
+.comment,
+.my-hotel {
     background-color: $white;
 }
 
 .btn-prices,
-.testimonial {
+.testimonial,
+.dest-popular {
     background-color: $gray;
 }
 
-.btn-black {
+footer, input {
+    background: $bleu ;
+}
+
+.btn-black,
+.btn-jaune:hover {
     background-color: $lightblack;
 }
 
 .nav-menu {
-    background-color: rgba(255,255,255,0.25);
+    background-color: $overlay;
 }
-

@@ -11,14 +11,13 @@ p {
 
 /* font-family */
 
-body {
+body, input {
     font-family: $poppins;
 }
 
 /* les titres */
 
 h1 {
-    text-transform: uppercase;
     font-size: 60px;
     margin: 20px 0;
 }
@@ -43,12 +42,38 @@ p {
     line-height: normal;
 }
 
+span {
+    font-weight: 600;
+}
+
+.nav-links a {
+    font-weight: 500;
+}
+
+.btn-prices a,
+.btn-yellow-hotel a {
+    font-weight: 700;
+}
+
+.txt-tags {
+    font-size: 12px;
+}
+
+.date-articles {
+    font-size: 14px;
+}
+
 /* text-align */
 
 .btn,
 h2,
 p,
-h5 {
+h5,
+.txt-tags,
+h4,
+.hotel-page h1,
+.contact-page h1,
+.chemin {
     text-align: center;
 }
 
@@ -57,8 +82,19 @@ h5 {
 .txt-test p,
 .not-found p,
 .txt-test h5,
-.not-found h2 {
+.not-found h2,
+.prev-articles h5,
+.prev-articles p,
+footer p,
+footer h5,
+.issue-block h5,
+.my-hotel p,
+.caracteristiques p {
         text-align: left;
+}
+
+.foot-liens a:nth-of-type(2n) {
+    text-align: right;
 }
 
 /* wrapper */
@@ -72,6 +108,17 @@ h5 {
     padding:60px 0;
 }
 
+.wrapper-img {
+    overflow: hidden;
+}
+
+/* uppercase */
+
+.home-page h1,
+.nav-links a {
+    text-transform: uppercase;
+}
+
 /*les liens */
 
 a {
@@ -83,4 +130,10 @@ a {
     background-color: rgba(0,0,0,0.5);
     height:100vh;
     width:100%
+}
+
+/* transition */ 
+
+.transition {
+    transition: all 0.4s ease-out;
 }

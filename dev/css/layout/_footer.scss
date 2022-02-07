@@ -1,0 +1,51 @@
+/******* footer *********/
+
+.top-footer {
+    @include flex-between;
+    border-bottom: 1px solid $lightblack;
+    padding-bottom:50px;
+    h5 {
+        padding:10px 0;
+    }
+}
+
+.top-footer > * {
+    width:23%;
+}
+
+.foot-liens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    a:not(:nth-of-type(-n+2)) {
+        padding-top: 20px;
+    }
+}
+
+.insta-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.email-address {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    input {
+      border: 1px solid $darkgray;
+      outline: none!important;
+      overflow: visible;
+      padding: 5px  
+    }
+    input:focus {
+        border: 1px solid $darkgray;
+    }
+    i {
+        padding:7px 10px;
+    }
+}
+
+.footer-bottom {
+    @include flex-between;
+    padding:50px 0;
+}

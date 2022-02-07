@@ -3,15 +3,16 @@
 .top-nav {
     @include flex-between;
     padding-top:20px;
-    .link-left {
-        a {
-            padding-right: 20px;
-        }
+}
+
+.link-left {
+    a {
+        padding-right: 20px;
     }
-    .link-right {
-        a {
-            padding-right: 20px;
-        }
+}
+.link-right {
+    a {
+        padding-right: 20px;
     }
 }
 

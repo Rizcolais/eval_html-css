@@ -3,6 +3,9 @@ header {
         max-width: 100%;
         height: 100vh;
         position: relative;
+        .head {
+            position: relative;
+        }
 }
 
 /* le header de la home */ 
@@ -14,6 +17,32 @@ header {
         top: 50%;
         transform: translate(0%, -50%);
         width:33%;
+    }
+}
+
+/*le header de hotel */
+
+.hotel-page .head {
+        background: url(../img/hero-hotels.jpg) center/cover;
+        height:500px;
+        .title-home {
+            padding-top:100px;
+        }
+        .overlay {
+            height:500px;
+        }
+}
+
+/*le header de contact */
+
+.contact-page .head {
+    background: url(../img/hero-contact.jpg) center/cover;
+    height:500px;
+    .title-home {
+        padding-top:100px;
+    }
+    .overlay {
+        height:500px;
     }
 }
 

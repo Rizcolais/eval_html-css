@@ -13,7 +13,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top:70px;
+        position: relative;
+        .overlay {
+            opacity: 0;
+            position: absolute;
+            width:100%;
+            height:100%;
+        }
     }
     .city:nth-of-type(1) {
         background-image: url(../img/d1.jpg);
@@ -24,8 +30,14 @@
     .city:nth-of-type(3) {
         background-image: url(../img/d3.jpg);
     }
-} 
+    .txt-city {
+        padding-top:100px;
+    }
+}
 
+.city:hover .overlay {
+    opacity: 1;
+}
 
 /* Section We Provide Affordable Prices */
 
@@ -63,6 +75,11 @@
             width: 100%;
         }
     }
+    .issue-block:hover {
+        img {
+            transform: scale(130%) rotate(-5deg);
+        }
+    }
 }
 
 /* Section Testimonial from our Clients */
@@ -95,6 +112,47 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0 232px;
+        padding: 0 232px;
+        position: relative;
+    }
+    img {
+        width: 100%;
+    height: 100%;
+    }
+}
+
+.about-us > * {
+    width:50%;
+}
+
+/*  Section Latest from Our Blog  */
+
+.all-article-blog {
+    @include flex-between;
+    .prev-articles {
+        width:32%;
+        padding:30px 0;
+        img {
+            width:100%;
+            position: relative;
+        }
+        img:hover {
+            transform: scale(120%);
+        }
+        .tags {
+            display: flex;
+            .txt-tags {
+                border: 1px solid $lightgray;
+                width:25%;
+                padding:8px;
+                margin-top:10px;
+            }
+            .txt-tags:nth-of-type(1) {
+                margin-right:15px;
+            }
+        } 
+        .date-articles, h5 {
+            padding-top:10px;
+        }
     }
 }
