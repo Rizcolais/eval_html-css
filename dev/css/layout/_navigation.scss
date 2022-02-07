@@ -1,0 +1,34 @@
+/* la navigation tout en haut */
+
+.top-nav {
+    @include flex-between;
+    padding-top:20px;
+    .link-left {
+        a {
+            padding-right: 20px;
+        }
+    }
+    .link-right {
+        a {
+            padding-right: 20px;
+        }
+    }
+}
+
+/* le menu de navigation */ 
+
+.nav-menu {
+    @include flex-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    .logo {
+        padding-left: 15px;
+    }
+    .nav-links {
+        padding: 0 15px;
+        a {
+            padding: 0 10px;
+        }
+    }
+}

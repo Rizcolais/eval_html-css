@@ -1,0 +1,19 @@
+/* les boutons */
+
+
+.btn {
+    border-radius: 5px;
+    width: 100%;
+    position: absolute;
+    text-transform: uppercase;
+    padding:10px;
+    font-weight: 600;
+    &-jaune {
+        width:150px;
+        margin-top:20px;
+    }
+}
+
+.btn-prices {
+    padding:10px;
+}

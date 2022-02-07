@@ -1,0 +1,6 @@
+// flex space between //
+
+@mixin flex-between {
+    display:flex;
+    justify-content: space-between;
+}

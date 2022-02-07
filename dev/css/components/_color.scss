@@ -1,0 +1,44 @@
+/* colors */
+
+h3,
+h1,
+.title-home p,
+.main-nav a,
+.btn-jaune a,
+.city p,
+.city h4,
+.btn-black
+{
+    color: $white;
+}
+
+.comment:nth-of-type(1) i:not(:last-child),
+.comment:nth-of-type(2) i:not(:nth-last-child(-n+2)) {
+    color: $jaune;
+}
+
+/*background color*/
+
+.btn-jaune
+ {
+    background-color: $jaune;
+}
+
+.packages,
+.comment {
+    background-color: $white;
+}
+
+.btn-prices,
+.testimonial {
+    background-color: $gray;
+}
+
+.btn-black {
+    background-color: $lightblack;
+}
+
+.nav-menu {
+    background-color: rgba(255,255,255,0.25);
+}
+
