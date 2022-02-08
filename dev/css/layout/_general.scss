@@ -44,11 +44,18 @@ p {
 
 /* font-weight */
 
+.la-cat div,
+.les-tags a {
+    font-weight: 300;
+}
+
 .nav-links a {
     font-weight: 500;
 }
 
-span {
+span,
+.leave-comment h5,
+.ban-yellow {
     font-weight: 600;
 }
 
@@ -59,13 +66,21 @@ span {
 
 /* font-size*/ 
 
-.txt-tags {
+.txt-tags,
+.popular-post-col div {
     font-size: 12px;
 }
 
 .date-articles,
-.contact-info > * div:nth-of-type(2) {
+.contact-info > * div:nth-of-type(2),
+.les-tags a,
+.popular-post-article h5 {
     font-size: 14px;
+}
+
+.leave-comment h5,
+.article-txt h2 {
+    font-size: 26px;
 }
 
 /* text-align */
@@ -80,7 +95,10 @@ h1,
 .chemin,
 .contact-info i,
 .btn-yellow,
-.btn-white {
+.btn-white,
+.ban-yellow,
+.charlie,
+.charlie p {
     text-align: center;
 }
 
@@ -98,13 +116,14 @@ footer h5,
 .my-hotel p,
 .caracteristiques p,
 .home-page h1,
-.blog-page p,
-.info-comment > * {
+.col-gauche-blog p,
+.info-comment > *,
+.popular-post-col h5,
+.article-txt h2 {
         text-align: left;
 }
 
 .foot-liens a:nth-of-type(2n),
-.article-content .info div:nth-of-type(1),
 .next > * {
     text-align: right;
 }
@@ -124,11 +143,15 @@ footer h5,
     overflow: hidden;
 }
 
-/* uppercase */
+/* text-transform */
 
 .home-page h1,
 .nav-links a {
     text-transform: uppercase;
+}
+
+.les-tags a {
+    text-transform: none;
 }
 
 /*les liens */
@@ -148,4 +171,10 @@ a {
 
 .transition {
     transition: all 0.4s ease-out;
+}
+
+/* les images */ 
+
+img {
+    width:100%;
 }

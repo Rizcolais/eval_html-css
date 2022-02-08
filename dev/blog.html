@@ -48,10 +48,10 @@
             </div>
         </div>
     </header>
-    <main class="gray-contact">
+    <main class="gray-blog">
         <div class="wrapper">
             <!-- Section colonne de gauche -->
-            <section class="wrapper-section">
+            <section class="wrapper-section col-gauche-blog">
                 <!-- Div article Astronomy Binoculars a Great Altnernative -->
                 <div class="article-astro">
                     <img src="img/feature-img1.jpg">
@@ -59,23 +59,28 @@
                     <div class="article-content">
                         <!-- Information article, colonne de gauche -->
                         <div class="info">
-                            <div class="categorie">Food, Technology, Politics, Lifestyle</div>
+                            <div class="categorie">
+                                <a href="#" class="transition">Food,</a> 
+                                <a href="#" class="transition">Technology,</a> 
+                                <a href="#" class="transition">Politics,</a> 
+                                <a href="#" class="transition">Lifestyle</a>
+                            </div>
                             <!-- Les infos + Icone -->
                             <div class="info-icon">
                                 <div>
-                                    <div class="info-content">Mark Wiens</div>
+                                    <div class="info-content"><a class="transition" href="#">Mark Wiens</a></div>
                                     <i class="fas fa-user"></i>
                                 </div>
                                 <div>
-                                    <div class="info-content">12 Dec, 2017</div>
-                                    <i class="fas fa-user"></i>
+                                    <div class="info-content"><a class="transition" href="#">12 Dec, 2017</a></div>
+                                    <i class="far fa-calendar-alt"></i>
                                 </div>
                                 <div>
-                                    <div class="info-content">1.2M Views</div>
+                                    <div class="info-content"><a class="transition" href="#">1.2M Views</a></div>
                                     <i class="far fa-eye"></i>
                                 </div>
                                 <div>
-                                    <div class="info-content">06 Comments</div>
+                                    <div class="info-content"><a class="transition" href="#">06 Comments</a></div>
                                     <i class="far fa-comment"></i>
                                 </div>
                             </div>
@@ -135,7 +140,7 @@
                             <div>December 4, 2017 at 3:12 pm</div>
                             <p>Never say goodbye till the end comes!</p>
                         </div>
-                        <div class="btn-white"><a href="#">Reply</a></div>
+                        <div class="transition btn-white"><a class="transition" href="#">Reply</a></div>
                     </div>
                     <div class="le-commentaire">
                         <div class="info-comment">
@@ -144,7 +149,7 @@
                             <div>December 4, 2017 at 3:12 pm</div>
                             <p>Never say goodbye till the end comes!</p>
                         </div>
-                        <div class="btn-white"><a href="#">Reply</a></div>
+                        <div class="transition btn-white"><a class="transition" href="#">Reply</a></div>
                     </div>
                     <div class="le-commentaire">
                         <div class="info-comment">
@@ -153,7 +158,7 @@
                             <div>December 4, 2017 at 3:12 pm</div>
                             <p>Never say goodbye till the end comes!</p>
                         </div>
-                        <div class="btn-white"><a href="#">Reply</a></div>
+                        <div class="transition btn-white"><a class="transition" href="#">Reply</a></div>
                     </div>
                     <div class="le-commentaire">
                         <div class="info-comment">
@@ -162,7 +167,7 @@
                             <div>December 4, 2017 at 3:12 pm</div>
                             <p>Never say goodbye till the end comes!</p>
                         </div>
-                        <div class="btn-white"><a href="#">Reply</a></div>
+                        <div class="transition btn-white"><a class="transition" href="#">Reply</a></div>
                     </div>
                     <div class="le-commentaire">
                         <div class="info-comment">
@@ -171,24 +176,136 @@
                             <div>December 4, 2017 at 3:12 pm</div>
                             <p>Never say goodbye till the end comes!</p>
                         </div>
-                        <div class="btn-white"><a href="#">Reply</a></div>
+                        <div class="transition btn-white"><a class="transition" href="#">Reply</a></div>
                     </div>
                 </div>
                 <!-- Block Leave a comment -->
-                <div>
+                <div class="leave-comment">
                     <h5>Leave a Comment</h5>
-                    <div>
+                    <div class="formulaire formulaire-blog">
                         <input type="text" placeholder="Enter Name" name="Name">
                         <input type="text" placeholder="Enter email address" name="email">
-                        <input type="text" placeholder="Subject" name="subject">
-                        <textarea type="text" placeholder="Enter your message" name="message"></textarea>
+                        <input class="subject" type="text" placeholder="Subject" name="subject">
+                        <textarea class="message" type="text" placeholder="Enter your message" name="message"></textarea>
                     </div>
-                    <div class="btn-yellow">Post Comment</div>
+                    <div class="le-bouton">
+                        <div class="transition btn-yellow">
+                            <a href="#">Post Comment</a>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- Section colonne de droite -->
             <section class="side-bar-right">
-                hey
+                <!-- Block Search Post -->
+                <div class="block-search-post">
+                    <div class="search-post">
+                        <input id="searchbar" type="text"
+                        name="search" placeholder="Search Posts"><i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <!-- Block Charlie Barber -->
+                <div class="charlie">
+                    <img src="img/user-info.png">
+                    <h5>Charlie Barber</h5>
+                    <div>Senior blog writer</div>
+                    <div class="link-right">
+                        <a class="transition" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="transition" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="transition" href="#"><i class="fab fa-github"></i></a>
+                        <a class="transition" href="#"><i class="fab fa-behance"></i></a>
+                    </div>
+                    <p>Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits detractors.</p>
+                </div>
+                <!-- Block Popular Posts -->
+                <div class="block-popular-col-left">
+                    <div class="ban-yellow">Popular Posts</div>
+                    <div class="popular-post-article">
+                        <div class="popular-post-col">
+                            <img src="img/pp1.jpg">
+                            <h5><a class="transition" href="#">Space The Final Frontier</a></h5>
+                            <div>02 Hours Ago</div>
+                        </div>
+                        <div class="popular-post-col">
+                            <img src="img/pp2.jpg">
+                            <h5><a class="transition" href="#">The Amazing Hubble</a></h5>
+                            <div>02 Hours Ago</div>
+                        </div>
+                        <div class="popular-post-col">
+                            <img src="img/pp3.jpg">
+                            <h5><a class="transition" href="#">Astronomy Or Astrology</a></h5>
+                            <div>02 Hours Ago</div>
+                        </div>
+                        <div class="popular-post-col">
+                            <img src="img/pp4.jpg">
+                            <h5><a class="transition" href="#">Asteriuds telescopes</a></h5>
+                            <div>02 Hours Ago</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Block Ad Goes Here -->
+                <div class="ad-goes">
+                    <img src="img/ads-banner.jpg">
+                </div>
+                <!-- Block Post Catgories-->
+                <div class="post-cat">
+                    <div class="ban-yellow">Post Catgories</div>
+                    <a href="#" class="la-cat transition">
+                        <div class="transition">Technology</div>
+                        <div class="transition">37</div>
+                    </a>
+                    <a href="#" class="la-cat transition">
+                        <div class="transition">Lifestyle</div>
+                        <div class="transition">24</div>
+                    </a>
+                    <a href="#" class="la-cat transition">
+                        <div class="transition">Fashion</div>
+                        <div class="transition">59</div>
+                    </a>
+                    <a href="#" class="la-cat transition">
+                        <div class="transition">Art</div>
+                        <div class="transition">29</div>
+                    </a>
+                    <a href="#" class="la-cat transition">
+                        <div class="transition">Food</div>
+                        <div class="transition">15</div>
+                    </a>
+                    <a href="#" class="la-cat transition">
+                        <div class="transition">Architecture</div>
+                        <div class="transition">09</div>
+                    </a>
+                    <a href="#" class="la-cat transition">
+                        <div class="transition">Adventure</div>
+                        <div class="transition">44</div>
+                    </a>
+                </div>
+                <!-- Block Newsletter -->
+                <div class="newsletter">
+                    <div class="ban-yellow">Newsletter</div>
+                    <p>Here, I focus on a range of items and features that we use in life without giving them a second thought.</p>
+                    <div class="formulaire">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Enter email" name="email">
+                        <div class="ban-yellow">Subscribe</div>
+                    </div>
+                    <p>You can unsubscribe at any time</p>
+                </div>
+                <!-- Block Tags Clouds -->
+                <div class="ban-yellow">Tag Clouds</div>
+                <div class="les-tags">
+                    <div class="transition btn-white"><a class="transition" href="#">Technology</a></div>
+                    <div class="transition btn-white"><a class="transition" href="#">Fashion</a></div>
+                    <div class="transition btn-white"><a class="transition" href="#">Architecture</a></div>
+                    <div class="transition btn-white"><a class="transition" href="#">Fashion</a></div>
+                    <div class="transition btn-white"><a class="transition" href="#">Food</a></div>
+                    <div class="transition btn-white"><a class="transition" href="#">Technology</a></div>
+                    <div class="transition btn-white"><a class="transition" href="#">Lifestyle</a></div>
+                    <div class="transition btn-white"><a class="transition" href="#">Art</a></div>
+                    <div class="transition btn-white"><a class="transition" href="#">Adventure</a></div>
+                    <div class="transition btn-white"><a class="transition" href="#">Food</a></div>
+                    <div class="transition btn-white"><a class="transition" href="#">Lifestyle</a></div>
+                    <div class="transition btn-white"><a class="transition" href="#">Adventure</a></div>
+                </div>
             </section>
         </div>
     </main>

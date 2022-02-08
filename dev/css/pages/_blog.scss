@@ -3,47 +3,49 @@
     flex-direction: row;
     section:nth-of-type(1) {
         width:80%;
-        padding-right:80px;
+        padding-right:50px;
     }
 }
 
-/*********** Section colonne de gauche ***********/
+/******************** Section colonne de gauche ********************/
 
-
-.article-astro {
-    img {
-        width:100%;
-    }
-    .article-content > * {
-        padding:0 15px;
-    }
-    .article-content {
-        @include flex-between;
-        padding-top: 20px;
-        .info {
-            width:25%;  
-            .categorie {
-                padding-bottom:15px;
-            }
-            .info-icon > * {
-                display: flex;
-                padding:10px 0;
-                justify-content: flex-end;
-                div {
-                    padding-right:15px;
-                }
-            }
-            .link-right {
-                padding-top:15px;
-                display: flex;
-                justify-content: flex-end;
+.article-content > * {
+    padding:0 15px;
+}
+.article-content {
+    @include flex-between;
+    padding-top: 20px;
+    .info {
+        width:25%;  
+        position: relative;
+        .categorie {
+            padding-bottom:15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            > *:not(:nth-of-type(2n)) {
+                padding-right:5px;
             }
         }
-        .article-txt {
-            width:80%;
-            h2 {
-                margin-top: 0
+        .info-icon > * {
+            display: flex;
+            padding:10px 0;
+            justify-content: flex-end;
+            div {
+                padding-right:15px;
             }
+        }
+        .link-right {
+            padding-top:15px;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    .article-txt {
+        width:80%;
+        h2 {
+            margin-top: 0
         }
     }
 }
@@ -59,6 +61,9 @@
 
 .img-block-2 {
     @include flex-between;
+    img {
+        width: 49%;
+    }
 }
 
 /* Block avec les deux derniers paragraphe */ 
@@ -132,15 +137,151 @@
     }
     .le-commentaire:nth-of-type(2),
     .le-commentaire:nth-of-type(3) { 
-            padding-left:50px;
-        
+        padding-left:50px;
     }
 }
 
-/*********** Section colonne de droite ***********/
+/* Block Leave a comment */ 
+
+.leave-comment {
+    padding-top: 60px;
+    .le-bouton {
+        width:100%;
+        position: relative;
+        padding-top:60px;
+        .btn-yellow {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+    }
+}
+
+
+/******************** Section colonne de droite ********************/
 
 .side-bar-right {
     border: 1px solid $lightgray;
     margin:60px 0;
     width:30%;
+    height: 100%;
+    padding:20px;
+}
+
+/* Block Search Post */ 
+
+.block-search-post {
+    border-bottom: 1px solid $lightgray;
+}
+
+/* Block Charlie Barber */
+
+.charlie {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    border-bottom: 1px solid $lightgray;
+    h5 {
+        margin:0;
+    }
+    img {
+        width:50%;
+    }
+    > * {
+        padding: 0 0 20px;
+    }
+}
+
+/* Block Popular Posts */
+.block-popular-col-left {
+    margin-top: 30px;
+    padding-bottom:30px;
+    border-bottom: 1px solid $lightgray;
+    .popular-post-article {
+        margin-top:10px;
+        h5 {
+            margin:0
+        }
+        > * {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            align-items: center;
+            padding:10px 0;
+            gap: 0 10px;
+        }
+        img {
+            grid-row: 1 / span 2;
+        }
+    }
+}
+
+/* Block Ad Goes Here */
+
+.ad-goes {
+    padding:40px 0;
+    border-bottom: 1px solid $lightgray;
+}
+
+/* Block Post Catgories */ 
+
+.post-cat {
+    border-bottom: 1px solid $lightgray;
+    padding-bottom:30px;
+    margin-bottom:30px;
+    margin-top: 30px;
+}
+
+.la-cat {
+    @include flex-between;
+    border-bottom: 1px $lightgray dotted;
+    padding:10px 0;
+}
+
+.la-cat:hover {
+    border-bottom: 1px $jaune dotted;
+}
+
+/* Block Newsletter */ 
+
+.newsletter {
+    position: relative;
+    i:nth-of-type(1) {
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    > * {
+        padding:10px 0;
+    }
+    .formulaire {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+            width: 100%;
+            padding-left:25px;
+        }
+        .ban-yellow {
+            width: max-content;
+            height: 50px;
+            padding:16px 5px;
+        }
+    }
+}
+
+/* Block Tags Clouds */ 
+
+.les-tags {
+    display: flex;
+    flex-wrap: wrap;
+    .btn-white {
+        width: max-content;
+        margin-right:5px;
+        margin-top:10px;
+    }
 }

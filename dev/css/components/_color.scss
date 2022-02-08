@@ -15,7 +15,11 @@ footer h5,
 .btn-prices:hover a,
 .chemin a,
 .chemin i,
-.btn-yellow a
+.btn-yellow a,
+.ban-yellow,
+.search-post,
+.search-post ::placeholder,
+.btn-white:hover a
 {
     color: $white;
 }
@@ -33,7 +37,11 @@ h5 a:hover,
 .foot-liens a:hover,
 .title-hotel i:not(:last-child),
 .contact-info i,
-.btn-yellow:hover a {
+.btn-yellow:hover a,
+.categorie > *:hover,
+.info-content a:hover,
+.gray-blog .link-right a:hover,
+.post-cat a:hover div {
     color: $jaune;
 }
 
@@ -47,27 +55,36 @@ h5 a,
 .btn-yellow-prices a,
 .btn-prices a,
 .btn-yellow-hotel a,
-.article-content .link-right a,
-.btn-white a {
+.gray-blog .link-right a,
+.btn-white a,
+.article-content a {
     color: $lightblack;
 }
 
 footer p,
 footer a,
 .contact-info > * div:nth-of-type(2),
-.info-content {
+.info-content a,
+.la-cat div,
+.popular-post-col div,
+.newsletter i:nth-of-type(1) {
     color:$darkgray;
 }
 
+
 /*background color*/
 
+::selection,
 .btn-jaune,
 .email-address i,
 .txt-tags:hover,
 .btn-yellow-prices,
 .btn-prices:hover,
 .btn-yellow-hotel,
-.btn-yellow
+.btn-yellow,
+.ban-yellow,
+.search-post,
+.btn-white:hover
  {
     background-color: $jaune;
 }
@@ -76,7 +93,6 @@ footer a,
 .comment,
 .my-hotel,
 .btn-yellow:hover,
-.side-bar-right,
 .p-white,
 .btn-white {
     background-color: $white;
@@ -85,7 +101,8 @@ footer a,
 .btn-prices,
 .testimonial,
 .dest-popular,
-.gray-contact {
+.gray-contact,
+.gray-blog {
     background-color: $gray;
 }
 
@@ -101,4 +118,8 @@ footer,
 
 .nav-menu {
     background-color: $overlay;
+}
+
+.search-post input {
+    background-color: transparent;
 }

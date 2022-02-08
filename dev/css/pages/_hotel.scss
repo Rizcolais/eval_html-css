@@ -5,9 +5,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:30px;
-    img {
-        width:100%;
-    }
     .title-hotel {
         @include flex-between;
         align-items: center;
