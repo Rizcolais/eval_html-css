@@ -36,5 +36,23 @@
         display: flex;
         justify-content: center;
     }
+    &-yellow {
+        width:150px;
+        margin-top:20px;
+        border: 1px solid $jaune;
+        border-radius: 5px;
+        text-transform: uppercase;
+        padding:10px;
+        font-weight: 500;
+    }
+    &-white {
+        width:100px;
+        margin-top:20px;
+        border: 1px solid $lightgray;
+        border-radius: 5px;
+        text-transform: uppercase;
+        padding:10px;
+        font-weight: 500;
+    }
 }
 

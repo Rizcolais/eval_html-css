@@ -11,7 +11,7 @@
     }
 }
 .link-right {
-    a {
+    a:not(:last-of-type) {
         padding-right: 20px;
     }
 }

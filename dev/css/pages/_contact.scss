@@ -1,0 +1,82 @@
+
+.gray-contact {
+    padding-bottom:60px;
+}
+
+/* Section de la Map Google */ 
+
+.la-map {
+    border-radius: 10px;
+    border: 5px solid white;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height:500px;
+    iframe {
+        width:100%;
+        opacity: 0.5;
+    }
+}
+
+/* Section des informations de Contact */ 
+
+.all-informations {
+    @include flex-between;
+    position: relative;
+    align-items: center;
+    .contact-info {
+        width:35%;
+    }
+}
+
+.contact-info > * {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    padding:6px 0;
+    i {
+        grid-row: 1 / span 2;
+    }
+    div:nth-of-type(1) {
+        padding-top:0;
+    }
+    div {
+        padding:4px 0;
+    }
+}
+
+.formulaire-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    textarea {
+        height:100%;
+        border: 1px solid $darkgray;
+        outline: none !important;
+        width:100%;
+        padding: 16px 15px; 
+    }
+    .input-left {
+        display: flex;
+        flex-direction: column;
+    }
+    input:nth-of-type(1) {
+        margin-top:0;
+    }
+    input:last-child {
+        margin-bottom:0;
+    }
+    input {
+        border: 1px solid $darkgray;
+        outline: none !important;
+        overflow: visible;
+        width: 350px;
+        height: 50px;
+        padding: 16px 15px; 
+        margin:10px 0;
+    }
+}
+
+.send-message {
+    float: right;
+    position: relative;
+}

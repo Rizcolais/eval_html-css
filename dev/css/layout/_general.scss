@@ -42,12 +42,14 @@ p {
     line-height: normal;
 }
 
-span {
-    font-weight: 600;
-}
+/* font-weight */
 
 .nav-links a {
     font-weight: 500;
+}
+
+span {
+    font-weight: 600;
 }
 
 .btn-prices a,
@@ -55,11 +57,14 @@ span {
     font-weight: 700;
 }
 
+/* font-size*/ 
+
 .txt-tags {
     font-size: 12px;
 }
 
-.date-articles {
+.date-articles,
+.contact-info > * div:nth-of-type(2) {
     font-size: 14px;
 }
 
@@ -71,9 +76,11 @@ p,
 h5,
 .txt-tags,
 h4,
-.hotel-page h1,
-.contact-page h1,
-.chemin {
+h1,
+.chemin,
+.contact-info i,
+.btn-yellow,
+.btn-white {
     text-align: center;
 }
 
@@ -89,11 +96,16 @@ footer p,
 footer h5,
 .issue-block h5,
 .my-hotel p,
-.caracteristiques p {
+.caracteristiques p,
+.home-page h1,
+.blog-page p,
+.info-comment > * {
         text-align: left;
 }
 
-.foot-liens a:nth-of-type(2n) {
+.foot-liens a:nth-of-type(2n),
+.article-content .info div:nth-of-type(1),
+.next > * {
     text-align: right;
 }
 

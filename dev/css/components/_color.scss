@@ -10,11 +10,12 @@ h1,
 .btn-black a,
 footer h5,
 .email-address i,
-input,
+.email-address input,
 .txt-tags:hover a,
 .btn-prices:hover a,
 .chemin a,
-.chemin i
+.chemin i,
+.btn-yellow a
 {
     color: $white;
 }
@@ -30,7 +31,9 @@ h5 a:hover,
 .main-nav a:hover,
 .comment:hover h5,
 .foot-liens a:hover,
-.title-hotel i:not(:last-child) {
+.title-hotel i:not(:last-child),
+.contact-info i,
+.btn-yellow:hover a {
     color: $jaune;
 }
 
@@ -43,12 +46,16 @@ h5 a,
 .txt-tags a,
 .btn-yellow-prices a,
 .btn-prices a,
-.btn-yellow-hotel a {
+.btn-yellow-hotel a,
+.article-content .link-right a,
+.btn-white a {
     color: $lightblack;
 }
 
 footer p,
-footer a {
+footer a,
+.contact-info > * div:nth-of-type(2),
+.info-content {
     color:$darkgray;
 }
 
@@ -59,24 +66,31 @@ footer a {
 .txt-tags:hover,
 .btn-yellow-prices,
 .btn-prices:hover,
-.btn-yellow-hotel
+.btn-yellow-hotel,
+.btn-yellow
  {
     background-color: $jaune;
 }
 
 .packages,
 .comment,
-.my-hotel {
+.my-hotel,
+.btn-yellow:hover,
+.side-bar-right,
+.p-white,
+.btn-white {
     background-color: $white;
 }
 
 .btn-prices,
 .testimonial,
-.dest-popular {
+.dest-popular,
+.gray-contact {
     background-color: $gray;
 }
 
-footer, input {
+footer, 
+.email-address input {
     background: $bleu ;
 }
 
