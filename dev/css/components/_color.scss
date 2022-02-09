@@ -21,7 +21,8 @@ footer h5,
 .search-post ::placeholder,
 .btn-white:hover a,
 .btn-fleche a,
-.btn-menu
+.btn-menu,
+.btn-xmark
 {
     color: $white;
 }
@@ -128,4 +129,8 @@ footer,
 
 .search-post input {
     background-color: transparent;
+}
+
+.overlay-sidebar {
+    background-color: $overlay2;
 }

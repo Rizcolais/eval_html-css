@@ -8,9 +8,12 @@
     <title>Document</title>
 </head>
 <body class="blog-page">
+    <!-- Le header -->
     <header>
         <div class="overlay">
             <div class="wrapper">
+                <!-- La sidebar -->
+                <div class="transition black-sidebar">hello</div>
                 <!-- La navigation -->
                 <nav class="main-nav">
                     <div class="top-nav">
@@ -26,12 +29,16 @@
                         </div>
                     </div>
                     <div class="nav-menu">
-                        <div class="logo"><img src="img/logo.png"></div>
-                        <div class="nav-links">
-                            <a class="transition" href="index.html">Home</a>
-                            <a class="transition" href="hotel.html">Hotels</a>
-                            <a class="transition" href="contact.html">Contact</a>
+                        <div class="logo">
+                            <img alt="logo travelista" src="img/logo.png">
                         </div>
+                        <div class="nav-links transition">
+                            <a class="main-nav__link transition" href="index.html">Home</a>
+                            <a class="main-nav__link transition" href="hotel.html">Hotels</a>
+                            <a class="main-nav__link transition" href="contact.html">Contact</a>
+                        </div>
+                        <div class="btn-menu transition"><i class="fa-solid fa-bars fa-lg"></i></div>
+                        <div class="btn-xmark transition"><i class="fa-solid fa-xmark fa-xl"></i></div>
                     </div>
                 </nav>
                 <!-- Titre principal -->
@@ -48,13 +55,16 @@
             </div>
         </div>
     </header>
+    <!-- Overlay side-bar -->
+    <aside class="overlay-sidebar transition"></aside>
+    <!-- La page interne -->
     <main class="gray-blog">
         <div class="wrapper">
             <!---------------------- Section colonne de gauche -------------------->
             <section class="wrapper-section col-gauche-blog">
                 <!-- Div article Astronomy Binoculars a Great Altnernative -->
                 <div class="article-astro">
-                    <img src="img/feature-img1.jpg">
+                    <img alt="fille à cheval" src="img/feature-img1.jpg">
                     <!-- le contenu de l'article -->
                     <div class="article-content">
                         <!-- Information article, colonne de gauche -->
@@ -107,8 +117,8 @@
                 </div>
                 <!-- Block avec les deux images -->
                 <div class="img-block-2">
-                    <img src="img/post-img1.jpg">
-                    <img src="img/post-img2.jpg">
+                    <img alt="flowers" src="img/post-img1.jpg">
+                    <img alt="etudiants" src="img/post-img2.jpg">
                 </div>
                 <!-- Block avec les deux derniers paragraphe -->
                 <div class="paragraphe-2">
@@ -119,7 +129,7 @@
                 <div class="prev-next">
                     <!-- Prev post -->
                     <div class="prev">
-                        <img src="img/prev.jpg">
+                        <img alt="Une fille" src="img/prev.jpg">
                         <div class="btn-fleche overlay transition">
                             <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
                         </div>
@@ -130,7 +140,7 @@
                     <div class="next">
                         <div>Next Post</div>
                         <h5>Telescopes 101</h5>
-                        <img src="img/next.jpg">
+                        <img alt="Une autre fille" src="img/next.jpg">
                         <div class="btn-fleche overlay transition">
                             <a href=""><i class="fa-solid fa-arrow-right"></i></a>
                         </div> 
@@ -141,7 +151,7 @@
                     <h5>05 Comments</h5>
                     <div class="le-commentaire">
                         <div class="info-comment">
-                            <img src="img/c1.jpg">
+                            <img alt="une troisième fille" src="img/c1.jpg">
                             <h5>Emily Blunt</h5>
                             <div>December 4, 2017 at 3:12 pm</div>
                             <p>Never say goodbye till the end comes!</p>
@@ -150,7 +160,7 @@
                     </div>
                     <div class="le-commentaire">
                         <div class="info-comment">
-                            <img src="img/c2.jpg">
+                            <img alt="un garçon" src="img/c2.jpg">
                             <h5>Elsie Cunningham</h5>
                             <div>December 4, 2017 at 3:12 pm</div>
                             <p>Never say goodbye till the end comes!</p>
@@ -159,7 +169,7 @@
                     </div>
                     <div class="le-commentaire">
                         <div class="info-comment">
-                            <img src="img/c3.jpg">
+                            <img alt="une quatrième fille" src="img/c3.jpg">
                             <h5>Annie Stephens</h5>
                             <div>December 4, 2017 at 3:12 pm</div>
                             <p>Never say goodbye till the end comes!</p>
@@ -168,7 +178,7 @@
                     </div>
                     <div class="le-commentaire">
                         <div class="info-comment">
-                            <img src="img/c4.jpg">
+                            <img alt="cinquième fille" src="img/c4.jpg">
                             <h5>Maria Luna</h5>
                             <div>December 4, 2017 at 3:12 pm</div>
                             <p>Never say goodbye till the end comes!</p>
@@ -177,7 +187,7 @@
                     </div>
                     <div class="le-commentaire">
                         <div class="info-comment">
-                            <img src="img/c5.jpg">
+                            <img alt="un deuxième garçon" src="img/c5.jpg">
                             <h5>Ina Hayes</h5>
                             <div>December 4, 2017 at 3:12 pm</div>
                             <p>Never say goodbye till the end comes!</p>
@@ -214,7 +224,7 @@
                     </div>
                     <!-- Block Charlie Barber -->
                     <div class="charlie">
-                        <img src="img/user-info.png">
+                        <img alt="Charlie le seul l'unique" src="img/user-info.png">
                         <h5>Charlie Barber</h5>
                         <div>Senior blog writer</div>
                         <div class="link-right">
@@ -230,22 +240,22 @@
                         <div class="ban-yellow">Popular Posts</div>
                         <div class="popular-post-article">
                             <div class="popular-post-col">
-                                <img src="img/pp1.jpg">
+                                <img alt="baladeur musique" src="img/pp1.jpg">
                                 <h5><a class="transition" href="#">Space The Final Frontier</a></h5>
                                 <div>02 Hours Ago</div>
                             </div>
                             <div class="popular-post-col">
-                                <img src="img/pp2.jpg">
+                                <img alt="radio" src="img/pp2.jpg">
                                 <h5><a class="transition" href="#">The Amazing Hubble</a></h5>
                                 <div>02 Hours Ago</div>
                             </div>
                             <div class="popular-post-col">
-                                <img src="img/pp3.jpg">
+                                <img alt="sucette" src="img/pp3.jpg">
                                 <h5><a class="transition" href="#">Astronomy Or Astrology</a></h5>
                                 <div>02 Hours Ago</div>
                             </div>
                             <div class="popular-post-col">
-                                <img src="img/pp4.jpg">
+                                <img alt="espace de bureau" src="img/pp4.jpg">
                                 <h5><a class="transition" href="#">Asteriuds telescopes</a></h5>
                                 <div>02 Hours Ago</div>
                             </div>
@@ -253,7 +263,7 @@
                     </div>
                     <!-- Block Ad Goes Here -->
                     <div class="ad-goes">
-                        <img src="img/ads-banner.jpg">
+                        <img alt="ajoute ta publicité ici" src="img/ads-banner.jpg">
                     </div>
                     <!-- Block Post Catgories-->
                     <div class="post-cat">
@@ -355,14 +365,14 @@
                 <div>
                     <h5>Insta Feed</h5>
                     <div class="insta-img">
-                        <img src="img/i1.jpg">
-                        <img src="img/i2.jpg">
-                        <img src="img/i3.jpg">
-                        <img src="img/i4.jpg">
-                        <img src="img/i5.jpg">
-                        <img src="img/i6.jpg">
-                        <img src="img/i7.jpg">
-                        <img src="img/i8.jpg">
+                        <img alt="instagram" src="img/i1.jpg">
+                        <img alt="instagram" src="img/i2.jpg">
+                        <img alt="instagram" src="img/i3.jpg">
+                        <img alt="instagram" src="img/i4.jpg">
+                        <img alt="instagram" src="img/i5.jpg">
+                        <img alt="instagram" src="img/i6.jpg">
+                        <img alt="instagram" src="img/i7.jpg">
+                        <img alt="instagram" src="img/i8.jpg">
                     </div>
                 </div>
             </div>

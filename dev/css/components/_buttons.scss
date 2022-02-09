@@ -73,6 +73,26 @@
             display: block;
         }
     }
+    &-menu.active {
+        display: none;
+    }
+    &-xmark {
+        display: none;
+    }
+    @include minitablet {
+    &-xmark.active {
+        outline: none !important;
+        border: none;
+        background: transparent;
+        position: absolute;
+        cursor: pointer;
+        right:0px;
+        width: 26px;
+        height: 15px;
+        margin-right:30px;
+        display: block;
+    }
+}
 }
 
 /* bannière jaune */
