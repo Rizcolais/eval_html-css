@@ -30,6 +30,7 @@
     gap:20px;
     @include responsive {
         grid-template-columns: 1fr;
+        width: 100%;
     }
     .input-left {
         display: flex;
