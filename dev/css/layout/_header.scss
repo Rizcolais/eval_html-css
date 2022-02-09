@@ -16,14 +16,27 @@ header {
 .home-page header {
     background: url(../img/hero-bg.jpg) center/cover;
     height:100vh;
+    @include minitablet {
+        height:500px;
+    }
     .title-home {
         position: absolute;
         top: 50%;
         transform: translate(0%, -50%);
         width:33%;
+        @include responsive {
+            padding:0 40px;
+            width:48%;
+        }
+        @include minitablet {
+            width: 74%;
+        }
     }
     .overlay {
         height:100%;
+        @include minitablet {
+            height:500px;
+        }
     }
 }
 

@@ -19,7 +19,9 @@ footer h5,
 .ban-yellow,
 .search-post,
 .search-post ::placeholder,
-.btn-white:hover a
+.btn-white:hover a,
+.btn-fleche a,
+.btn-menu
 {
     color: $white;
 }
@@ -118,6 +120,10 @@ footer,
 
 .nav-menu {
     background-color: $overlay;
+}
+
+.black-sidebar {
+    background-color: $black;
 }
 
 .search-post input {

@@ -1,9 +1,23 @@
 /******* footer *********/
 
+.main-footer {
+    @include responsive {
+        padding: 60px 40px;
+    }
+}
+
+/* Le footer du haut avec les 4 colonnes */
+
 .top-footer {
-    @include flex-between;
     border-bottom: 1px solid $lightblack;
     padding-bottom:50px;
+    @include flex-between;
+    @include responsive {
+        flex-wrap: wrap;
+    }
+    @include minitablet {
+        flex-direction: column;
+    }
     h5 {
         padding:10px 0;
     }
@@ -11,7 +25,23 @@
 
 .top-footer > * {
     width:23%;
+    @include responsive {
+        width:48%;
+    }
+    @include minitablet {
+        width:100%;
+        margin-bottom: 20px;
+    }
 }
+
+.top-footer > div:nth-of-type(1), 
+.top-footer > div:nth-of-type(2) {
+    @include responsive {
+        margin-bottom: 20px;
+    }
+} 
+
+/* Deuxième colonne (navigation links) */
 
 .foot-liens {
     display: grid;
@@ -21,31 +51,70 @@
     }
 }
 
-.insta-img {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 15px;
-}
+/* Troisième colonne : newsletter */
 
 .email-address {
     padding: 20px 0;
     display: flex;
     align-items: center;
     input {
-      border: 1px solid $darkgray;
-      outline: none!important;
-      overflow: visible;
-      padding: 5px  
+        border: 1px solid $darkgray;
+        outline: none!important;
+        overflow: visible;
+        padding: 5px;
+        @include minitablet {
+            width: 100%;
+            padding:15px;
+        }
     }
     input:focus {
         border: 1px solid $darkgray;
     }
     i {
         padding:7px 10px;
+        @include minitablet {
+            padding:17px;
+        }
     }
 }
 
+/* Quatrième colonne : instagram */
+
+.insta-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    @include minitablet {
+        gap:15px 0;
+    }
+    @include iphone {
+        grid-template-columns: 1fr 1fr;
+    }
+    img {
+        @include minitablet {
+            width:100px;
+            height:100px;
+        }
+    }
+}
+
+/* Le footer du bas */
+
 .footer-bottom {
-    @include flex-between;
     padding:50px 0;
+    @include flex-between;
+    @include responsive {
+        flex-direction: column;
+    }
+    .copyright {
+        @include responsive {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.footer-bottom > * {
+    @include responsive {
+        width:100%;
+    }
 }

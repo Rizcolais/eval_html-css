@@ -27,6 +27,12 @@ h2 {
     font-size:36px;
 }
 
+.not-found h2 {
+    @include responsive {
+        font-size:30px;
+    }
+}
+
 h3 {
     font-weight: 300;
 }
@@ -98,8 +104,16 @@ h1,
 .btn-white,
 .ban-yellow,
 .charlie,
-.charlie p {
+.charlie p,
+.btn-black {
     text-align: center;
+}
+
+.not-found h2,
+.not-found p {
+    @include minitablet {
+        text-align: center!important;
+    }
 }
 
 .title-home p,
@@ -119,8 +133,15 @@ footer h5,
 .col-gauche-blog p,
 .info-comment > *,
 .popular-post-col h5,
-.article-txt h2 {
+.article-txt h2,
+.prev > * {
         text-align: left;
+}
+
+.foot-liens a:nth-of-type(2n) {
+    @include minitablet {
+        text-align: left!important;
+    }
 }
 
 .foot-liens a:nth-of-type(2n),
@@ -133,6 +154,7 @@ footer h5,
 .wrapper {
     width: 1140px;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 .wrapper-section {

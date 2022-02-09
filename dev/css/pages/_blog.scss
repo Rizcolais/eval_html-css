@@ -1,9 +1,20 @@
 .blog-page main .wrapper {
-    @include flex-between;
     flex-direction: row;
+    @include flex-between;
+    @include responsive {
+        flex-direction: column;
+    }
     section:nth-of-type(1) {
         width:80%;
         padding-right:50px;
+        @include responsive {
+            width:100%;
+            padding: 60px 60px 0;
+            margin:0 auto;
+        }
+        @include minitablet {
+            padding: 60px 20px 0;
+        }
     }
 }
 
@@ -11,27 +22,49 @@
 
 .article-content > * {
     padding:0 15px;
+    @include minitablet {
+        width: 100% !important;;
+    }
 }
 .article-content {
-    @include flex-between;
     padding-top: 20px;
+    @include flex-between;
+    @include minitablet {
+        flex-direction: column;
+    }
     .info {
         width:25%;  
         position: relative;
+        @include minitablet {
+            margin-bottom: 20px;
+        }
         .categorie {
             padding-bottom:15px;
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
             flex-wrap: wrap;
+            @include minitablet {
+                justify-content: flex-start;
+            }
             > *:not(:nth-of-type(2n)) {
                 padding-right:5px;
+            }
+        }
+        .info-icon {
+            @include minitablet {
+                display: flex;
+                flex-wrap: wrap;
             }
         }
         .info-icon > * {
             display: flex;
             padding:10px 0;
             justify-content: flex-end;
+            @include minitablet {
+                width:48%;
+                justify-content: flex-start;
+            }
             div {
                 padding-right:15px;
             }
@@ -40,12 +73,18 @@
             padding-top:15px;
             display: flex;
             justify-content: flex-end;
+            @include minitablet {
+                justify-content: flex-start;
+            }
         }
     }
     .article-txt {
         width:80%;
         h2 {
             margin-top: 0
+        }
+        p {
+            padding-bottom:15px;
         }
     }
 }
@@ -78,9 +117,12 @@
 /* Block prev post / next post */ 
 
 .prev-next {
-    @include flex-between;
     padding:30px 0;
     border-top: 1px solid $lightgray;
+    @include flex-between;
+    @include minitablet {
+        flex-wrap: wrap;
+    }
     img {
         grid-row: 1 / span 2;
         width: 60px;
@@ -88,9 +130,14 @@
     }
     .prev {
         grid-template-columns: 60px 1fr;
+        position: relative;
+        @include minitablet {
+            margin-bottom: 20px;
+        }
     }
     .next {
         grid-template-columns: 1fr 60px;
+        position: relative;
         img {
             grid-column: 2 / span 1;
         }
@@ -106,6 +153,43 @@
     height:60px;
     align-items: center;
     gap:0 20px;
+    @include minitablet {
+        width:100%;
+    }
+}
+
+/*btn fleche */
+
+.btn-fleche:hover {
+    opacity: 1;
+}
+
+.btn-fleche:nth-of-type(1) {
+    float: left;
+}
+
+.btn-fleche:nth-of-type(2) {
+    right: 0;
+}
+
+.btn-fleche {
+    opacity: 0;
+    position: absolute;
+    height:60px;
+    width:60px;
+    .overlay {
+        opacity: 1;
+        position: absolute;
+        width:100%;
+        height:100%;
+    }
+}
+
+.btn-fleche > * {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Block commentaires */ 
@@ -114,9 +198,12 @@
     border: 1px solid $lightgray;
     padding:10px 20px;
     .le-commentaire {
-        @include flex-between;
         align-items: center;
         margin-bottom:25px;
+        @include flex-between;
+        @include iphone {
+            flex-wrap: wrap;
+        }
         .info-comment {
             display: grid;
             grid-template-columns: 60px 1fr;
@@ -159,14 +246,20 @@
 }
 
 
-/******************** Section colonne de droite ********************/
+/****************************** Section colonne de droite ***********************************/
 
 .side-bar-right {
-    border: 1px solid $lightgray;
     margin:60px 0;
     width:30%;
     height: 100%;
-    padding:20px;
+    @include responsive {
+        width:100%;
+        padding:60px;
+    }
+    .section-border {
+        border: 1px solid $lightgray;
+        padding:20px;
+    }
 }
 
 /* Block Search Post */ 
@@ -188,7 +281,10 @@
         margin:0;
     }
     img {
-        width:50%;
+        max-width:50%;
+        @include responsive {
+            max-width:30%;
+        }
     }
     > * {
         padding: 0 0 20px;

@@ -20,7 +20,12 @@
     }
     &-black {
         width:250px;
-        top:75%;
+        margin-top:20px;
+        margin-bottom:10px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        padding:10px;
+        font-weight: 500;
     }
     &-yellow-prices {
         width:80px;
@@ -55,6 +60,19 @@
     &-white:hover {
         border: 1px solid $jaune;
     }
+    &-menu {
+        outline: none !important;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        width: 26px;
+        height: 15px;
+        display: none;
+        margin-right:30px;
+        @include minitablet {
+            display: block;
+        }
+    }
 }
 
 /* bannière jaune */
@@ -64,3 +82,4 @@
     padding:10px;
     margin:10px 0;
 }
+

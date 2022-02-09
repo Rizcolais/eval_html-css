@@ -1,10 +1,31 @@
 /* Section Popular destinations */
 
+.dest-popular .wrapper > p {
+    @include minitablet {
+        padding: 0 80px;
+    }
+}
+
 .all-hotels {
     padding-top: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:30px;
+    @include responsive {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        justify-items: center;
+        margin: 0 auto;
+    }
+    .my-hotel {
+        @include responsive {
+            width: 70%;
+        }
+        @include minitablet {
+            width: 100%;
+            padding:0 20px;
+        }
+    }
     .title-hotel {
         @include flex-between;
         align-items: center;

@@ -1,6 +1,12 @@
 
 .gray-contact {
     padding-bottom:60px;
+    @include responsive {
+        padding: 0 30px 60px;
+    }
+    @include minitablet {
+        padding:0 0 60px;
+    }
 }
 
 /* Section de la Map Google */ 
@@ -12,6 +18,10 @@
     overflow: hidden;
     width: 100%;
     height:500px;
+    @include minitablet {
+        border: none;
+        border-radius: 0px;
+    }
     iframe {
         width:100%;
         opacity: 0.5;
@@ -21,11 +31,22 @@
 /* Section des informations de Contact */ 
 
 .all-informations {
-    @include flex-between;
     position: relative;
     align-items: center;
+    @include flex-between;
+    @include responsive {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    @include minitablet {
+        padding:0 30px;
+    }
     .contact-info {
         width:35%;
+        @include responsive {
+            margin-bottom: 30px;
+            width:100%;
+        }
     }
 }
 
@@ -33,6 +54,9 @@
     display: grid;
     grid-template-columns: 1fr 6fr;
     padding:6px 0;
+    @include responsive {
+        grid-template-columns: 6% 1fr;
+    }
     i {
         grid-row: 1 / span 2;
     }
@@ -47,4 +71,7 @@
 .send-message {
     float: right;
     position: relative;
+    @include minitablet {
+        padding: 0 30px;
+    }
 }

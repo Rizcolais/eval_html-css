@@ -4,3 +4,42 @@
     display:flex;
     justify-content: space-between;
 }
+
+// responsive 
+
+$macbook: 1490px;
+$macbookair: 1390px;
+$tablet: 1190px;
+$minitablet: 909px;
+$iphoneSE:667px;
+
+
+@mixin macbook {
+    @media (max-width: $macbook) {
+        @content;
+    }
+}
+
+@mixin macbookair {
+    @media (max-width: $macbookair) {
+        @content;
+    }
+}
+
+@mixin responsive {
+    @media (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin minitablet {
+    @media (max-width: $minitablet) {
+        @content;
+    }
+}
+
+@mixin iphone {
+    @media (max-width: $iphoneSE) {
+        @content;
+    }
+}
