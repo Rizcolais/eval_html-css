@@ -31,6 +31,9 @@ header {
         @include minitablet {
             width: 74%;
         }
+        @include iphone {
+            width:100%;
+        }
     }
     .overlay {
         height:100%;
